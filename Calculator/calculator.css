@@ -1,0 +1,32 @@
+
+    body{
+      background-color: black;
+      font-family: Arial;
+    }
+    .buttons-design{
+      background-color: rgb(51, 51, 51);
+      color: white;
+      border: none;
+      height: 60px;
+      width: 60px;
+      border-radius: 60px;
+      font-size: 26px;
+      margin-right: 2px;
+      cursor: pointer;
+    }
+    .operator-buttons{
+      background-color: rgb(254, 160, 10);
+      color: white;
+    }
+    .result{
+      color: white;
+      font-size: 40px;
+      margin-bottom: -5PX;
+    }
+    .clear-button{
+      font-size: 20px;
+
+    }
+
+  
+

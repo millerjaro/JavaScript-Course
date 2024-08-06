@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Distance Converter</title>
+</head>
+<body>
+  <script> 
+    function convertLength(length,from,to){
+      
+      const mileToKm = (length * 1.6);
+      const kmToMile = (length / 1.6 );
+      const mileToFeet = (length * 5280);
+      const kmToFeet = (length * 3281);
+      const kmToKm = (length);
+
+      if (from === 'miles' && to === 'km'){
+        console.log(`${mileToKm}km`);
+      }else if (from === 'km' && to === 'miles'){
+        console.log(`${kmToMile} miles`);
+      }else if (from === 'miles'&& to === 'ft'){
+        console.log(`${mileToFeet}ft`)
+      }else if (from === 'km' && to ==='ft'){
+        console.log(`${kmToFeet}ft`)
+      }else if (from === 'km' && to === 'km') {
+        console.log(`${kmToKm}km`)   
+      }else{
+        console.log('Invalid Unit');
+      }
+    }     
+    convertLength(5,'km','ft');
+  </script>
+</body>
+</html>

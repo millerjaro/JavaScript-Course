@@ -1,0 +1,81 @@
+<html>
+  <head>
+
+    <style>
+.buttons{
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.toggled{
+  background-color: black;
+  color: white;
+}
+    </style>
+
+</head>
+
+
+    <body>
+
+
+
+
+<button class="buttons js-buttons" 
+  onclick = "buttonElement('.js-buttons')" 
+  >Gaming</button>
+
+<button class="buttons js-buttons2" 
+onclick="buttonElement('.js-buttons2')"
+  >Music</button>
+
+<button class="buttons js-buttons3"
+ onclick="buttonElement('.js-buttons3')"
+ >Tech</button>
+
+
+
+
+<script>
+function buttonElement(selector){
+    const categoryButton = document.querySelector(selector);
+      
+    if (!categoryButton.classList.contains('toggled')){
+
+      stopButton();
+
+        categoryButton.classList.add ('toggled')
+      }else{
+       categoryButton.classList.remove('toggled');
+      }
+
+}
+
+
+//if hindi pa na ooff bawal pa i toggle 
+
+function stopButton(){
+    const buttonStopElement = 
+    document.querySelector('.toggled');
+    
+    if(buttonStopElement){
+      buttonStopElement.classList.remove('toggled')
+
+    }
+    
+}
+
+
+
+
+
+</script>
+
+
+</body>
+  
+</html>

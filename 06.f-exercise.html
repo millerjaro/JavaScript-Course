@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    
+    /*const number = Math.random()
+    console.log(number);
+    let result = '';
+
+    if (number < 0.5){
+      console.log(result = 'heads')
+    } else{
+      console.log (result = 'tails')
+    }
+    
+    let guess = 'heads';
+    console.log (`Your guess is ${guess}`)
+
+    if (result === guess){
+      console.log ('You win!')
+    }else{
+      console.log ('You lose!')
+    }
+      */
+
+    const randomNumber = Math.random();
+    const result = randomNumber < 0.5 ?  'heads' : 'tails';
+
+    const guess = 'heads';
+    console.log(guess === result ? 'You win!' : 'You lose!');
+
+  </script>
+</body>
+</html>

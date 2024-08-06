@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+<style>
+
+    
+</style>
+
+<body>
+ 
+
+<script>
+ 
+function arraySwap(array){
+ const lastIndex = [array.length -1] ; //5
+  
+ const lastValue = array[lastIndex]; // stored it to lastValue
+ 
+ const firstValue = array[0]; // 1
+  
+// swapping 
+
+ array[0] = lastValue; // first is equal to last
+ array[lastIndex] = firstValue; // last index is equal to first
+
+  return array;
+
+}
+
+  console.log(arraySwap([1,20,22,24,5]));
+
+</script>
+    
+ 
+</body> 
+</html>

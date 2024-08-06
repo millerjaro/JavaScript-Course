@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop</title>
+  <style>
+.done{
+  background-color: green;
+  color:aliceblue;
+
+}
+  </style>
+
+
+</head>
+<body>
+  <p> Order Now!</p>
+  <button onclick= 
+  "console.log(`Cost of food:$${cost += 5}`)"
+  > Coffee ($5) </button>
+
+  <button onclick= 
+  "console.log(`Cost of food:$${cost += 3}`)" 
+  >Bagel($3)</button>
+
+  <button onclick= 
+  "console.log(`Cost of food:$${cost += 9}`)" 
+  >Soup($9)</button>
+
+<button onclick = 
+ "console.log(`Your order was reset! ${cost = 0}`)" 
+> Start Again </button>
+
+<br><br>
+<button class = "done" onclick = "
+console.log(`Thank you for ordering! \nTax:$${cost * 0.1} \nTotal:$${cost * 0.1 + cost}`)
+">Done </button>
+  
+  <script>
+
+  let name = 'Miller';
+  console.log (` My name is ${name}`);
+
+  let cost = 0;
+
+  </script>
+</body>
+</html>
