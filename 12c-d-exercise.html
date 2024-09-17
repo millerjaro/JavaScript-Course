@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+<style>
+
+    
+</style>
+
+<body>
+ 
+    <button class="js-start-button">Start</button>
+
+<script>
+      
+
+
+        const startButtonElement = document.querySelector('.js-start-button');
+
+          startButtonElement.addEventListener('click',() => {
+          
+          startButtonElement.innerHTML = 'Loading...';
+
+          setTimeout(() =>{
+          startButtonElement.innerHTML = 'Finished!'
+          },1000)
+
+        })
+
+       
+   
+      
+     
+</script>
+    
+ 
+</body> 
+</html>

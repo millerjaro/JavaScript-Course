@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+<style>
+
+    
+</style>
+
+<body>
+ 
+    <button class="js-start-button">Start</button>
+
+<script>
+
+        document.querySelector('.js-start-button').addEventListener('click', ()=> {
+          const startButtonElement = document.querySelector('.js-start-button');
+
+          setTimeout(function(){
+          startButtonElement.innerHTML = 'Finished!'
+          },2000)
+
+        })
+  
+
+</script>
+    
+ 
+</body> 
+</html>
